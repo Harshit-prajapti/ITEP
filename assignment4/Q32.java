@@ -1,11 +1,10 @@
-//32) A	b	C	d	E	f	G	h	…… n terms 
 import java.util.Scanner;
 class Test{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter number of terms");
+        System.out.println("enter The terms : ");
         int n = sc.nextInt();
-        char capital = 'A';   //65
+        char capital = 'A';   
         char small = 'a';
         
         int i=1;
