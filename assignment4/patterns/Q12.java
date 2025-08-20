@@ -1,8 +1,8 @@
-// A
-// AB
-// ABC
-// ABCD
-// ABCDE
+// a
+// ab
+// abc
+// abcd
+// abcde
 
 class Test {
     public static void main(String args[]){

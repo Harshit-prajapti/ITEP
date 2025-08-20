@@ -1,21 +1,17 @@
-//     1
-//    11
-//   1*1
-//  1**1
-// 11111
-class Test {
+// 1
+// 123
+// 12345
+// 1234567
+// 123456789
+class Test{
     public static void main(String args[]){
-    for(int i = 1; i<= 5; i++){
-    for(int j = 1; j<=5-i; j++){
-        System.out.print(" ");
-    }
-    for(int k = 5; k>5-i; k--){
-        if(k == 5 && k == (5-i)){
-            System.out.print("1");
-        }
-    }
-        System.out.println();
-}
+        int term = 1;
+        for(int i = 1; i<=5; i++){
+            for(int j = 1 ; j <= term; j++){
+                System.out.print(j);
+            }
+            term = term + 2;
+            System.out.println();
+        }   
     }
 }
-

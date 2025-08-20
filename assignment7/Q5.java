@@ -10,8 +10,8 @@ class Test{
         for(int i = 0 ; i<arr.length; i++){
             for(int j = 0 ; j<arr[i].length ; j++){
                 if(arr[i][j] %2 == 0){
-                    even ++;
-                }else odd++;
+                    even += arr[i][j];
+                }else odd += arr[i][j];
             }
         }
         System.out.println("Even "+even);

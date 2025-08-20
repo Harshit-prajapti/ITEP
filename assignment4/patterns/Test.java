@@ -8,7 +8,7 @@ class Test {
             int j = 1;
             while (j<=10) {
                 if(i == 1 || i == 10){
-                    System.out.print("-");
+                    System.out.print("_");
                 }
                 else if (j == 1|| j== 10){
                     System.out.print("|");

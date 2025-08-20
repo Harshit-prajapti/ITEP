@@ -1,20 +1,21 @@
 // 1
-// 10
-// 1 1
-// 1  0
-// 10101
+// 12
+// 1 3
+// 1  4
+// 12345
 
-class Test {
-    public static void main(String args[]){
-        for(int i=1;i<=5;i++){
-            int print = 1;
-            for(int j=1;j<=i;j++){
-                System.out.print(print);
-                if(print == 0)print = 1;
-                else print = 0;
+    class Test {
+        public static void main(String args[]){
+            for(int i=1; i<=5; i++){
+                for(int j=1;j<=i;j++){
+                    if(j == 1 || i == 5 || j == i){
+                        System.out.print(j);
+                        continue;
+                    }
+                    System.out.print(" ");
+                }
+                
+                System.out.println();
             }
-            
-            System.out.println();
+            }
         }
-        }
-    }

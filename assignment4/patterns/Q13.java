@@ -1,8 +1,9 @@
-// A
-// AB
-// ABC
-// ABCD
-// ABCDE
+// 1
+// 01
+// 101
+// 0101
+// 10101
+
 
 class Test {
     public static void main(String args[]){
