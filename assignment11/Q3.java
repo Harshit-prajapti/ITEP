@@ -78,10 +78,22 @@ class Intern extends Employee{
 }
 class Test{
     public static void main(String args[]){
-        FullTimeEmployee e1 = new FullTimeEmployee(1,"Harshit",100000);
+        Scanner sc = new Scanner(System.in);
+        int salery;
+        String name;
+        System.out.println("Enter the name of Full Time employee : ");
+        name = sc.nextLine();
+        System.out.println("Enter the salery of Full time employee : ");
+        salery = sc.nextInt();
+        FullTimeEmployee e1 = new FullTimeEmployee(1,name,salery);
+        sc.nextLine();
+        System.out.println("Enter the name of Part Time employee : ");
+        name = sc.nextLine();
+        System.out.println("Enter the salery of Part time employee : ");
+        salery = sc.nextInt();
+        PartTimeEmployee e2 = new PartTimeEmployee(2,name,salery);
         e1.showDetails();
-        e1.calculateSalary();
-        PartTimeEmployee e2 = new PartTimeEmployee(2,"Harshit",2000);
+        e1.calculateSalary();        
         e2.showDetails();
         e2.calculateSalary();
     }

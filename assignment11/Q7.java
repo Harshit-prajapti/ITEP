@@ -30,7 +30,7 @@ class Elephant extends Animal{
         super(name,age);
     }
     public void eat(){
-        System.out.println("Eat lifes...");
+        System.out.println("Eat leafes...");
     }
     public void makeSound(){
         System.out.println("i don't know...");

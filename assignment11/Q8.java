@@ -1,21 +1,41 @@
-interface p1{
-    public void fun();
+interface DiscountApplicable {
+    void applyDiscount();
 }
-interface p2{
-    public void fun();
+abstract class Order{
+    private int orderId;
+    private int amount;
+    abstract void processOrder();
+    abstract void cancleOrder();
+    public void orderSummary(int dis = 0){
+        System.out.printf("Order Id : "+orderId+" Amount : "+amount+" -"+dis+" = "+(amount-dis));
+    }
 }
-class C implements p1,p2{
-    // System.out.println();
-    public void fun(){
-        System.out.println("function called");
+class OnlineOrder extends Order{
+    private int discount;
+    public void processOrder(){
+        Syste.out.println("Processing order...");
+    }
+    public void cancleOrder(){
+        System.out.println("Order cancled");
+    }
+    public void applyDiscount(int dis){
+        this.discount = dis;
+    }
+}
+class StorePickupOrder extends Order{
+     private int discount;
+    public void processOrder(){
+        Syste.out.println("Processing order...");
+    }
+    public void cancleOrder(){
+        System.out.println("Order cancled");
+    }
+    public void applyDiscount(int dis){
+        this.discount = dis;
     }
 }
 class Test{
     public static void main(String args[]){
-       p1 obj = new C();
-       p2 obj2 = new C();
-       obj.fun();
-       obj2.fun();
-    
+        
     }
 }
