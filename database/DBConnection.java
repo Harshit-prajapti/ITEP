@@ -1,8 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import javax.swing.*;
+package java.util.com;
 import java.sql.*;
 class DBConnection{
     public static Connection getConnection(){
@@ -20,10 +16,5 @@ class DBConnection{
             e.printStackTrace();
         }
         return con;
-    }
-}
-public class P1 {
-    public static void main(String[] args) {
-        DBConnection.getConnection();
     }
 }
