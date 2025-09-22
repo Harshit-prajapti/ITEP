@@ -12,9 +12,8 @@ class A {
 }
 class B {
     synchronized public void x1(A obj){
-        System.out.println("Tread-2 stats  the x1");
+        System.out.println("Thread-2 starting the x1");
        try { Thread.sleep(1000); } catch (Exception e) {}
-
         obj.m2();
     }
     synchronized public void x2(){
