@@ -9,9 +9,13 @@ class Test{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter you NAME : ");
-        String name = new sc.next();
+        String name = sc.nextLine();
+        boolean flage = false;
         try{
-            String validName = 
+            Integer.parseInt(name);
+            System.out.println(name);
+        }catch(NumberFormateException e){
+            System.out.println("Invalid User Name");
         }
     }
 }
