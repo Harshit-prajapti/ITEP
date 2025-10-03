@@ -8,7 +8,7 @@ class Test{
         for(int i = 0 ; i<data.length; i++){
             try{
                 sum += Integer.parseInt(data[i]);
-            }catch(Exception e){}
+            }catch(Exception e){e.printStackTrace();}
         }
         System.out.println(sum);
     }
