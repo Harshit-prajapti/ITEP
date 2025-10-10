@@ -12,6 +12,13 @@ class Ex{
 class Test{
     public static void main (String arge[]){
         Ex e = new Ex();
-        System.out.println(e.div());
+       int x = 9/0;
+        try{
+             System.out.println(e.div());
+            
+        }catch(RuntimeException | ExceptionHandle f){
+            f.printStackTrace();
+        }
+        System.out.println("________________END________________");
     }
 }
